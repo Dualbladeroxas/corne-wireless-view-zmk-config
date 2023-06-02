@@ -15,9 +15,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTL>
                 ;
         };
 
@@ -62,7 +62,7 @@
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &kp TAB    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &bt BT_CLR   &trans       &zed_em_kay  &kp V       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &bt BT_CLR   &trans       &zed_em_kay  &zm_paste       &trans         &trans   &trans   &trans &trans    &trans &trans
                           	        &kp LCTRL     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
