@@ -14,18 +14,18 @@
             label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             bindings
-                = <&macro_press &kp LCTRL &kp C>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LCTRL &kp C>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
                 ;
         };
         new_macro: new_macro {
             label = "ZM_new_macro";
             compatible = "zmk,behavior-macro";
             bindings
-                = <&macro_press &kp LCTRL &kp V>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LCTRL &kp V>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
