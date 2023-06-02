@@ -19,21 +19,7 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
-        new_macro: new_macro {
-            label = "ZM_new_macro";
-            compatible = "zmk,behavior-macro";
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp A &kp B &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
     };
-
-    keymap {
-        // ... Your keymap layers
-    };
-};
     
 / {
         keymap {
