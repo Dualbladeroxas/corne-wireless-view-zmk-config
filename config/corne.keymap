@@ -10,8 +10,8 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        copy: copy {
+            label = "ZM_copy";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp LCTRL>
@@ -19,8 +19,8 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-        new_macro: new_macro {
-            label = "ZM_new_macro";
+        paste: paste {
+            label = "ZM_paste";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp LCTRL>
@@ -58,7 +58,7 @@
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &kp TAB    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &bt BT_CLR   &trans       &zed_em_kay  &new_macro   &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &bt BT_CLR   &trans       &copy  &kp V   &trans         &trans   &trans   &trans &trans    &trans &trans
                           	        &kp LCTRL     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
