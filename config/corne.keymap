@@ -20,6 +20,17 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+
+        zm_paste: zm_paste {
+            label = "ZM_paste";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTL>
+                ;
+        };
     };
 };
     
